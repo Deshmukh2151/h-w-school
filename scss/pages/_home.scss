@@ -382,10 +382,10 @@
         -moz-box-shadow: 0 0 3.37rem rgba(0, 0, 0, 0.13);
         box-shadow: 0 0 3.37rem rgb(0 0 0 / 13%);
         padding: 1.4rem 1.25rem 1.53rem 1.25rem;
-        -webkit-transition: all 0.3s ease;
-        -moz-transition: all 0.3s ease;
-        -o-transition: all 0.3s ease;
-        transition: all 0.3s ease;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
         &:hover{
             background-color: $primary;
             color: #fff;
@@ -437,10 +437,25 @@
         }
     }
     .school-info{
+        .school-text{
+            position: relative;
+            z-index: 1025;
+        }
         .our-school__dot-img {
             position: absolute;
             right: 0;
             bottom: 0;
+        }
+    }
+    .card-style-2{
+        box-shadow: 1px 1px 1px rgb(0 0 0 / 10%);
+        margin-bottom: 12px;
+        transition: all 0.3s ease;
+        &:hover{
+            .card-text-hover{
+                background-color: $primary;
+                color: #fff;
+            }
         }
     }
 }    
@@ -579,19 +594,15 @@
     display: flex;
     flex-wrap: wrap;
 }
-.card-style-2{
-    box-shadow: 1px 1px 1px rgb(0 0 0 / 10%);
-    margin-bottom: 12px;
-    &:hover{
-        .card-text-hover{
-            background-color: $primary;
-            color: #fff;
-        }
-    }
-}
 .card-profile{
     .card-profile-img{
         width: 60px !important;
         height: 60px;
     }
+}
+
+.card-style-3{
+    border-radius: 0.93rem;
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgb(0 0 0 / 10%);
 }

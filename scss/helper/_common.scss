@@ -1,16 +1,19 @@
 body{
     font-family: 'Circular Std Book' !important;
 }
+a{
+    text-decoration: none !important;
+}
 .font-16{
     font-size: 16px;
 }
 .block-title {
+    font-family: 'Circular Std';
+    font-weight: bold;
     font-size: 2.12rem;
     margin-bottom: 1.4rem;
-    font-weight: 600;
-    color: #22262A;
+    color: #373737;
     text-align: center;
-    margin: 0 auto;
 }    
 .block-subtitle {
     margin: 0 auto 3.5rem auto;

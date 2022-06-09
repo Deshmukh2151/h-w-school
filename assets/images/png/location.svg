@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
+  <g id="icon_Component_3_1" data-name="icon/Component 3 – 1" transform="translate(0 0.291)">
+    <rect id="Rectangle_6" data-name="Rectangle 6" width="29" height="29" transform="translate(0 -0.292)" fill="rgba(255,255,255,0)"/>
+    <g id="pin-3" transform="translate(6.042 3.625)">
+      <path id="Path_1" data-name="Path 1" d="M9.458,0A8.406,8.406,0,0,0,1,8.458,8.122,8.122,0,0,0,3.538,14.5c.121.121,4.954,4.471,5.075,4.592a1.267,1.267,0,0,0,1.571,0c.121-.121,5.075-4.471,5.075-4.592A8.122,8.122,0,0,0,17.8,8.458,8.231,8.231,0,0,0,9.458,0Zm0,10.875a2.417,2.417,0,1,1,2.417-2.417A2.424,2.424,0,0,1,9.458,10.875Z" transform="translate(-1)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
