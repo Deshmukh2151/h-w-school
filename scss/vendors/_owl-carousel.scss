@@ -1,0 +1,22 @@
+// carousel css
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot {
+    font-size: 1.5rem;
+    color: $primary;
+    outline: none;
+    border: none;
+    background: none;
+    &:hover{
+        outline: none;
+        border: none;
+        background: none;
+        color: $primary;
+    }
+}
+.owl-carousel .owl-nav button.owl-prev{
+    margin-right: 1.5rem;
+}
+
+.our-school-carousel .owl-nav{
+    display: flex;
+    justify-content: flex-start;
+}
