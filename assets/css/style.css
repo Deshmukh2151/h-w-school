@@ -10938,6 +10938,11 @@ textarea.form-control-lg {
   justify-content: flex-start;
 }
 
+.testimonial-carousel .item {
+  transform: scale3d(0.8, 0.8, 1);
+  transition: all 0.3s ease-in-out;
+}
+
 .dropdown .dropdown-toggle::after {
   content: "";
   display: inline-block;
