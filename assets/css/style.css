@@ -39,16 +39,45 @@
   font-style: normal;
   font-display: swap;
 }
+html {
+  font-size: 16px;
+}
+@media (min-width: 1700px) {
+  html {
+    font-size: 20px;
+  }
+}
+
 body {
   font-family: "Circular Std Book" !important;
+}
+
+@media (min-width: 1700px) {
+  .container {
+    max-width: 96% !important;
+  }
 }
 
 a {
   text-decoration: none !important;
 }
 
+.btn-light:hover {
+  background-color: #841E25 !important;
+  color: #fff !important;
+}
+
+.btn-primary:hover {
+  background-color: #fff !important;
+  color: #841E25 !important;
+}
+
 .font-16 {
   font-size: 16px;
+}
+
+.w-90 {
+  width: 90%;
 }
 
 .block-title {
@@ -81,9 +110,19 @@ a {
 }
 
 .card-style-3 {
-  border-radius: 0.93rem;
-  border: none;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.search-div {
+  position: absolute;
+  right: 5%;
+  top: 15%;
+  display: none;
+  z-index: 1000000000000000000000;
+  transition: all 5s ease-in-out;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 /*!
@@ -10946,14 +10985,18 @@ textarea.form-control-lg {
 .dropdown .dropdown-toggle::after {
   content: "";
   display: inline-block;
-  width: 0.7em;
-  height: 0.7em;
+  width: 0.56em;
+  height: 0.56em;
   margin: -0.3em 0 0 0.4em;
   vertical-align: middle;
-  content: "";
   border: 0.3em solid #002147;
   border-width: 0 0.15em 0.15em 0;
   transform: rotateZ(45deg);
+}
+@media (max-width: 767px) {
+  .dropdown .dropdown-toggle::after {
+    border-color: #fff;
+  }
 }
 
 .progress {
@@ -11140,6 +11183,7 @@ textarea.form-control-lg {
 }
 .header-top .top-links {
   font-weight: 500;
+  color: #C8C8C8;
 }
 
 .sticky-top {
@@ -11154,13 +11198,115 @@ textarea.form-control-lg {
   font-size: 1rem;
   color: #002147;
 }
-.sticky-top .navbar-light .navbar-nav .nav-link {
+.sticky-top .navbar .navbar-nav .nav-link {
+  margin-right: 12px;
   color: #002147;
 }
-.sticky-top .navbar-light .navbar-nav .search-icon {
+.sticky-top .navbar .navbar-nav .nav-link:last-child {
+  margin-right: 0;
+}
+@media (max-width: 991px) {
+  .sticky-top .navbar .navbar-nav .nav-link {
+    color: #fff;
+  }
+}
+.sticky-top .navbar .navbar-nav .search-icon {
   border: 0.06rem solid #BDBDBD;
   padding: 4px 12px;
   border-radius: 20px;
+}
+
+@media (max-width: 991px) {
+  .navbar .navbar-brand {
+    position: relative;
+    z-index: 2;
+  }
+  .navbar .navbar-brand .logo__heading {
+    color: #002147;
+  }
+}
+@media (max-width: 991px) {
+  .navbar .navbar-nav {
+    padding: 0.8rem 0 0 0.93rem;
+    margin: 3rem 0;
+  }
+}
+.navbar .navbar-toggler {
+  display: none;
+  border: none;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+@media (max-width: 991px) {
+  .navbar .navbar-toggler {
+    display: inline-block;
+  }
+}
+.navbar .navbar-toggler span {
+  position: relative;
+  display: block;
+  width: 1.87rem;
+  background: transparent;
+  z-index: 1;
+}
+.navbar .navbar-toggler span:before, .navbar .navbar-toggler span:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 0.12rem;
+  width: 100%;
+  background: #841E25;
+  transition: transform 0.3s ease;
+}
+.navbar .navbar-toggler span:before {
+  transform: translateY(0) rotate(45deg);
+}
+.navbar .navbar-toggler span:after {
+  transform: translateY(0) rotate(-45deg);
+}
+.navbar .navbar-toggler.collapsed span {
+  position: relative;
+  display: block;
+  height: 0.12rem;
+  width: 1.87rem;
+  background: #841E25;
+  z-index: 1;
+}
+.navbar .navbar-toggler.collapsed span::before {
+  transform: translateY(0.5rem);
+}
+.navbar .navbar-toggler.collapsed span::after {
+  transform: translateY(-0.5rem);
+}
+@media (max-width: 991px) {
+  .navbar .header__menu {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    display: block;
+    width: 0 !important;
+    height: 100vh;
+    background-color: #000;
+    opacity: 1;
+    transition: 0.5s ease;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .navbar .header__menu.show {
+    right: 0;
+    width: 100% !important;
+    transition: 0.3s ease;
+  }
+  .navbar .header__menu .navbar-nav .nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 15px 5px 0px;
+  }
+  .navbar .header__menu .navbar-nav .dropdown-menu.show {
+    margin-right: 15px;
+  }
 }
 
 .site-footer {
@@ -11547,7 +11693,7 @@ footer::before {
   max-height: 700px;
   min-height: 500px;
   background-size: cover;
-  z-index: -2;
+  z-index: 1;
   position: relative;
   background-image: url("../../assets/images/png/pillar-structure-bg.webp");
 }
@@ -11571,6 +11717,7 @@ footer::before {
 @media (max-width: 767px) {
   .blog {
     width: 100%;
+    margin: 8.31rem auto 2.81rem auto;
   }
 }
 .blog .blog-img {
@@ -12081,7 +12228,7 @@ footer::before {
 }
 .our-school .school-info .school-text {
   position: relative;
-  z-index: 1025;
+  z-index: 10;
 }
 .our-school .school-info .our-school__dot-img {
   position: absolute;

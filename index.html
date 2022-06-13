@@ -23,7 +23,7 @@
                 class="img-fluid me-2"
                 alt="call icon"
               />
-              <span class="text-white top-links">Support Hotline : 586-217-2163</span>
+              <span class="top-links">Support Hotline : 586-217-2163</span>
             </a>
             <a
               class="d-flex flex-row align-items-center justify-content-center"
@@ -34,7 +34,7 @@
                 class="img-fluid me-2"
                 alt="letter icon"
               />
-              <span class="text-white top-links">vctung@outlook.com </span>
+              <span class="top-links">vctung@outlook.com </span>
             </a>
           </div>
           <div
@@ -71,21 +71,14 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container">
             <a class="navbar-brand me-0 logo d-flex align-items-center justify-content-center" href="javascript:void(0)">
-              <img src="./assets/images/icon/hw-logo.svg" alt="home logo" class="logo__img">
+              <img src="./assets/images/icon/main-logo.svg" alt="home logo" class="logo__img">
               <span class="logo__heading ms-1">HW SCHOOL DISTRICT</span>
             </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <button class="navbar-toggler collapsed p-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#menu-toggler">
+            <span></span>
+           </button>
+           <div class="header__menu collapse navbar-collapse" id="menu-toggler">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a
@@ -225,8 +218,8 @@
                 <li class="nav-item">
                   <a class="nav-link" href="javascript:void(0);">More</a>
                 </li>
-                <li class="nav-item d-flex align-items-center ms-3">
-                  <a class="nav-link search-icon" href="javascript:void(0);">
+                <li class="nav-item d-flex align-items-center">
+                  <a class="nav-link search-icon" href="javascript:void(0);" id="searchHere">
                     <img src="./assets/images/icon/search.svg" alt="img-fluid" />
                   </a>
                 </li>
@@ -235,33 +228,41 @@
           </div>
         </nav>
     </header>
+    <!-- search bar -->
+    <div class="search-div">
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit" href="javascript:void(0)">Search</button>
+      </form>
+    </div>
 <main>
     <section class="container-fluid banner positon-relative">
         <div class="banner-bg"></div>
-        <div class="row h-100">
-          <div class="col-md-6">
-            <div
-              class="align-items-start d-flex flex-column h-100 hero-section justify-content-center ps-0 ps-md-5"
-            >
-              <h1 class="text-white banner-heading">
-                We are determined to achieve the highest standards
-              </h1>
-              <p class="text-white-50 banner-subHeading">
-                We are always availed to consult on taking your higher education
-                to the next level so you can stay competitive in the global
-                world.
-              </p>
-              <a class="btn btn-primary px-4 rounded-pill" href="javascript:void(0);">
-                Enroll Now <i class="far fa-arrow-right ms-2"></i>
-              </a>
+        <div class="container h-100">
+          <div class="row h-100">
+            <div class="col-md-6">
+              <div
+                class="align-items-start d-flex flex-column h-100 hero-section justify-content-center w-90">
+                <h1 class="text-white banner-heading">
+                  We are determined to achieve the highest standards
+                </h1>
+                <p class="text-white-50 banner-subHeading">
+                  We are always availed to consult on taking your higher education
+                  to the next level so you can stay competitive in the global
+                  world.
+                </p>
+                <a style=" cursor: pointer !important;" class="btn btn-primary px-4 rounded-pill" href="javascript:void(0);">
+                  Enroll Now <i class="far fa-arrow-right ms-2"></i>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-end">
-            <img
-              src="./assets/images/png/group-of-student.png"
-              alt="group-of-student"
-              class="img-fluid"
-            />
+            <div class="col-md-6 d-flex align-items-end">
+              <img
+                src="./assets/images/png/group-of-student.png"
+                alt="group-of-student"
+                class="img-fluid"
+              />
+            </div>
           </div>
         </div>
     </section>
@@ -304,12 +305,8 @@
         <div class="container">
           <div class="mission">
             <div class="mission-image">
-              <img
-                class="img-fluid mission-image__img"
-                src="https://hwschools.php-dev.in/sites/default/files/mission-vision/2021-10/mission.png"
-                alt="Mission"
-                loading="lazy"
-              />
+              <img class="img-fluid mission-image__img mt-n4"
+                src="https://hwschools.php-dev.in/sites/default/files/mission-vision/2021-10/mission.png"  alt="Mission"  loading="lazy" />
               <img
                 class="mission-image__dots"
                 src="./assets/images/png/vission-dot.png"
@@ -538,7 +535,7 @@
                     <div class="testimonial-carousel owl-carousel owl-theme">
                       <!-- testimonial-carousel 1 -->
                       <div class="item">
-                        <div class="card mb-3 card-style-3">
+                        <div class="card mb-3 card-style-3 border-0 card mb-3 shadow">
                             <div class="card-body">
                                 <div class="card-profile">
                                    <div class="d-flex mb-3">
@@ -559,7 +556,7 @@
                       </div>
                       <!-- testimonial-carousel 2 -->
                       <div class="item">
-                         <div class="card mb-3 card-style-3">
+                         <div class="card mb-3 card-style-3 border-0 card mb-3 shadow">
                             <div class="card-body">
                                 <div class="card-profile">
                                    <div class="d-flex mb-3">
@@ -580,7 +577,7 @@
                       </div>
                       <!-- testimonial-carousel 3 -->
                       <div class="item">
-                        <div class="card mb-3 card-style-3">
+                        <div class="card mb-3 card-style-3 border-0 card mb-3 shadow">
                             <div class="card-body">
                                 <div class="card-profile">
                                    <div class="d-flex mb-3">
@@ -601,7 +598,7 @@
                       </div>
                       <!-- testimonial-carousel 4 -->
                       <div class="item">
-                        <div class="card mb-3 card-style-3">
+                        <div class="card mb-3 card-style-3 border-0 card mb-3 shadow">
                             <div class="card-body">
                                 <div class="card-profile">
                                    <div class="d-flex mb-3">
@@ -622,7 +619,7 @@
                       </div>
                       <!-- testimonial-carousel 5 -->
                       <div class="item">
-                         <div class="card mb-3 card-style-3">
+                         <div class="card mb-3 card-style-3 border-0 card mb-3 shadow">
                             <div class="card-body">
                                 <div class="card-profile">
                                    <div class="d-flex mb-3">
@@ -643,7 +640,7 @@
                       </div>
                       <!-- testimonial-carousel 6 -->
                       <div class="item">
-                        <div class="card mb-3 card-style-3">
+                        <div class="card mb-3 card-style-3 border-0 card mb-3 shadow">
                             <div class="card-body">
                                 <div class="card-profile">
                                    <div class="d-flex mb-3">
@@ -664,7 +661,7 @@
                       </div>
                       <!-- testimonial-carousel 7 -->
                       <div class="item">
-                        <div class="card mb-3 card-style-3">
+                        <div class="card mb-3 card-style-3 border-0 card mb-3 shadow">
                             <div class="card-body">
                                 <div class="card-profile">
                                    <div class="d-flex mb-3">
@@ -1092,9 +1089,15 @@
       </div>
     </div>
 </footer>
+
     <script src="./assets/js/jquery-3.2.1.slim.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script> 
     <script src="./assets/js/owl.carousel.min.js"></script> 
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
+
+
+
+
+

@@ -1,68 +1,33 @@
-.header-top{
-    position: relative;
-    z-index: 1100;
-    .top-links{
-        font-weight: 500;
-        color: #C8C8C8;
-    }
-}
-.sticky-top{
-    top: -1px;
-    .logo{
-        &__img{
-            width: 45px;
-        }
-        &__heading{
-            font-family: 'Circular Std';
-            font-weight: 500;
-            font-size: 1rem;
-            color: $text-color;
-        }
-    }
-    .navbar{
-        .navbar-nav {
-            .nav-link {
-                margin-right: 12px;
-                color:$text-color;
-                &:last-child {
-                    margin-right: 0;
-                }
-                @include breakpoint(ipad-max) {
-                   color: #fff; 
-                }
-            }
-            .search-icon{
-                border: 0.06rem solid #BDBDBD;
-                padding: 4px 12px;
-                border-radius: 20px;
-            }
-        }
-    } 
-}
-
 .navbar {
-    @include breakpoint(ipad-max) {
-        .navbar-brand{
-            position: relative;
-            z-index: 2;
-            .logo__heading{
-                color: $text-color;
-            }
-        }
+    position: relative;
+    padding: 1.1rem 0.93rem;
+    color: $primary;
+    border-bottom: 0.06rem solid rgba(255, 255, 255, 26%);
+    &__menu {
+        max-width: 72.5rem;
+        width: 100%;
+        margin: 0 auto;
     }
-    .navbar-nav{
-        @include breakpoint(ipad-max) {
-            padding: 0.8rem 0 0 0.93rem;
-            margin: 3rem 0;
+    .navbar-brand { 
+        margin: 0 22.5% 0 0;
+        @include breakpoint(mobile-max) {
+            position: relative;
+            margin: 0 0 1rem 0;
+            z-index: 1;
+        }
+        img {
+            width: 8rem;
+            height: 1.73rem;
         } 
-    } 
+    }
     .navbar-toggler { 
         &:focus {
             box-shadow: none;
         }
         display: none;
+        height: 1.68rem; 
         border: none;
-        @include breakpoint(ipad-max) {
+        @include breakpoint(mobile-max) {
             display: inline-block;
         }
         span {
@@ -78,7 +43,7 @@
                 height: 0.12rem;
                 width: 100%;
                 background: $primary;
-                transition: transform 0.3s ease;
+                transition: transform 0.5s ease;
             }
             &:before {
                 transform: translateY(0) rotate(45deg);
@@ -105,7 +70,8 @@
         }
     }     
     .header__menu {
-        @include breakpoint(ipad-max) {
+       
+        @include breakpoint(mobile-max) {
             position: absolute;
             top: 0;
             right: -100%;
@@ -116,23 +82,39 @@
             // padding: 35% 0 0;
             opacity: 1;
             transition: 0.5s ease;
-            overflow-y: scroll;
-            overflow-x: hidden;
             &.show {
                 right: 0;
                 width: 100% !important;
                 // height: 100%;
                 transition: 0.3s ease;
             }
-            .navbar-nav{
-                .nav-link{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    margin: 5px 15px 5px 0px;
+        }
+        ul {
+            @include breakpoint(mobile-max) {
+                // margin: 4rem 0 0 0rem;
+                // position: absolute;
+                // top: 0; 
+                width: 100%;
+                border-top: 0.06rem solid rgba(255, 255, 255, 26%);
+                padding: 2rem 0 0 0.93rem;
+                margin: 3.95rem 0;
+            }
+            li {
+                margin: 0 3.02rem 0 0;
+                &:last-of-type {
+                    margin: 0;
                 }
-                .dropdown-menu.show{
-                    margin-right: 15px;
+                .nav-link {
+                    // font-family: $tertiary-font;
+                    color: #fff;
+                    font-size: 0.97rem;
+                    padding: 0;
+                    @include breakpoint(mobile-max) {
+                        padding: 0 0 1rem; 
+                    }
+                    &:hover {
+                        color: $primary;
+                    }
                 }
             }
         }

@@ -1,11 +1,33 @@
+html {
+    font-size: 16px;
+    @include breakpoint(extra-large-desktop-min) {
+        font-size: 20px;
+    }
+}
 body{
     font-family: 'Circular Std Book' !important;
+}
+.container{
+    @include breakpoint(extra-large-desktop-min) {
+    max-width: 96% !important;
+    }
 }
 a{
     text-decoration: none !important;
 }
+.btn-light:hover{
+  background-color: $primary !important;
+  color: #fff !important;
+}
+.btn-primary:hover{
+   background-color: #fff !important;
+   color: $primary !important;
+}
 .font-16{
     font-size: 16px;
+}
+.w-90{
+    width: 90%;
 }
 .block-title {
     font-family: 'Circular Std';
@@ -36,7 +58,18 @@ a{
 }
 
 .card-style-3{
-    border-radius: 0.93rem;
-    border: none;
-    box-shadow: 1px 1px 1px 1px rgb(0 0 0 / 10%);
+    border-radius: 15px;
+}
+
+
+.search-div{
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    display: none;
+    z-index: 1000000000000000100000;
+    transition: all 05s ease-in-out;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
 }

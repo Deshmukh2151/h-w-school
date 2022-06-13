@@ -1,4 +1,10 @@
 $(document).ready(function(){
+    $(".collapsed").click(function(){
+        $(".logo__heading").toggleClass("text-white");
+    });
+    $("#searchHere").click(function(){
+        $(".search-div").toggleClass("d-block");
+    });
     $('.our-school-carousel').owlCarousel({
         loop:true,
         margin:10,
@@ -34,5 +40,7 @@ $(document).ready(function(){
                 items:3,
             }
         }
-    })
+    });
 });
+
+

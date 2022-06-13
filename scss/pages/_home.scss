@@ -3,7 +3,7 @@
     max-height: 700px;
     min-height: 500px;
     background-size: cover;
-    z-index: -2;
+    z-index: 1;
     position: relative;
     background-image: url('../../assets/images/png/pillar-structure-bg.webp');
     .banner-bg {
@@ -24,6 +24,7 @@
     margin: 8.31rem auto 11.81rem auto;
     @include breakpoint(mobile-max) {
     width: 100%;
+    margin: 8.31rem auto 2.81rem auto;
     }
     .blog-img{
         position: relative;
@@ -439,7 +440,7 @@
     .school-info{
         .school-text{
             position: relative;
-            z-index: 1025;
+            z-index: 10;
         }
         .our-school__dot-img {
             position: absolute;

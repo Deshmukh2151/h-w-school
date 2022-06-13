@@ -3,14 +3,16 @@
         &::after {
             content: "";
             display: inline-block;
-            width: 0.7em;
-            height: 0.7em;
+            width: 0.56em;
+            height: 0.56em;
             margin: -0.3em 0 0 0.4em;
             vertical-align: middle;
-            content: "";
             border: 0.3em solid #002147;
             border-width: 0 0.15em 0.15em 0;
             transform: rotateZ(45deg);
+            @include breakpoint(mobile-max) {
+                border-color: #fff;
+            }
         }
     }
 }
