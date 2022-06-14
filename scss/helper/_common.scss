@@ -17,10 +17,10 @@ a{
 }
 .btn-light:hover{
   background-color: $primary !important;
-  color: #fff !important;
+  color: $text-white !important;
 }
 .btn-primary:hover{
-   background-color: #fff !important;
+   background-color: $text-white !important;
    color: $primary !important;
 }
 .font-16{
@@ -67,7 +67,7 @@ a{
     right: 5%;
     top: 15%;
     display: none;
-    z-index: 1000000000000000100000;
+    z-index: 10000000;
     transition: all 05s ease-in-out;
     background: white;
     padding: 20px;

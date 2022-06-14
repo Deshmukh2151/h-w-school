@@ -106,7 +106,7 @@
                 }
                 .nav-link {
                     // font-family: $tertiary-font;
-                    color: #fff;
+                    color: $text-white;
                     font-size: 0.97rem;
                     padding: 0;
                     @include breakpoint(mobile-max) {

@@ -175,7 +175,7 @@
                 margin: 1.31rem 0 0 0;
             }
             &__title {
-                color: #fff;
+                color: $text-white;
                 font-size: 2.12rem;
                 font-weight: 700;
                 margin-bottom: 0.75rem;
@@ -186,7 +186,7 @@
             &__desc {
                 // font-family: $secondary-font;
                 font-family: 'Roboto';
-                color: #fff;
+                color: $text-white;
                 font-size: 0.94rem;
                 font-weight: 400;
                 line-height: 1.31rem;
@@ -378,7 +378,7 @@
         -moz-border-radius: 0.93rem;
         padding: 3rem 1.7rem;
         border-radius: 0.93rem;
-        background-color: #FFFFFF;
+        background-color: $text-white;
         -webkit-box-shadow: 0 0 3.37rem rgb(0 0 0 / 13%);
         -moz-box-shadow: 0 0 3.37rem rgba(0, 0, 0, 0.13);
         box-shadow: 0 0 3.37rem rgb(0 0 0 / 13%);
@@ -389,11 +389,11 @@
         transition: all 0.5s ease-in-out;
         &:hover{
             background-color: $primary;
-            color: #fff;
+            color: $text-white;
             .card-content {
                 .card-content-icon{
                     background-color: $primary !important;
-                    border: 1px solid #fff;
+                    border: 1px solid $text-white;
                 }
             }    
         }
@@ -455,7 +455,7 @@
         &:hover{
             .card-text-hover{
                 background-color: $primary;
-                color: #fff;
+                color: $text-white;
             }
         }
     }
@@ -508,7 +508,7 @@
         justify-content: center;
         align-items: center;
         border-radius: 50%;
-        background: #fff;
+        background: $text-white;
         margin-right: 2.4%;
         @include breakpoint(portrait-mobile-max) {
             width: 90px;

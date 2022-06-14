@@ -11,7 +11,7 @@
             border-width: 0 0.15em 0.15em 0;
             transform: rotateZ(45deg);
             @include breakpoint(mobile-max) {
-                border-color: #fff;
+                border-color: $text-white;
             }
         }
     }

@@ -1,6 +1,6 @@
 .site-footer {
     position: relative;
-    color: #fff;
+    color: $text-white;
     background: #841E25;;
     padding: 4.19rem 0 0 0;
     @include breakpoint(ipad-max) {
@@ -22,7 +22,7 @@
     .nav {
         display: block;
         .nav-link {
-            color: #fff;
+            color: $text-white;
             font-size: 0.87rem;
             font-weight: 400;
             padding: 0;
@@ -41,10 +41,10 @@
     .content a,
     .content a.is-active {
         display: inline-block;
-        color: #fff;
+        color: $text-white;
         &:hover,
         &:focus {
-            color: #fff;
+            color: $text-white;
             text-decoration: none;
         }
     }
@@ -63,7 +63,7 @@
             padding: 0;
             border: none;
             >h2 {
-                color: #fff;
+                color: $text-white;
                 font-size: 1.06rem;
                 font-weight: 700;
                 text-transform: capitalize;
@@ -76,7 +76,7 @@
             }
         }
         .content {
-            color: #fff;
+            color: $text-white;
         }
         p {
             margin-top: 0;
@@ -98,7 +98,7 @@
                 margin: 0;
             }
             .navbar-brand {
-                color: #fff;
+                color: $text-white;
                 white-space: normal;
                 margin-bottom: 1rem;
                 @include breakpoint(desktop-max) {
@@ -148,7 +148,7 @@
         }
         .region-footer-fourth {
             width: 17.5%;
-            color: #fff;
+            color: $text-white;
             margin-left: 5.28%;
             @include breakpoint(ipad-max) {
                 width: 47%;
@@ -163,7 +163,7 @@
         .other-links {
             .listen-now-title,
             .transparency-reporting-title {
-                color: #fff;
+                color: $text-white;
                 font-size: 1.06rem;
                 font-weight: 700;
                 text-transform: capitalize;
@@ -209,7 +209,7 @@
             margin: 0;
         }
         .content {
-            color: #fff;
+            color: $text-white;
             padding: 0;
         }
         .region-footer-fifth {
@@ -287,12 +287,12 @@
         height: 2.7rem;
         align-items: center;
         justify-content: center;
-        border: 0.06rem solid #fff;
+        border: 0.06rem solid $text-white;
         border-radius: 100%;
         margin-right: 0.46rem;
         [class^="icon-"],
         [class*=" icon-"] {
-            color: #fff;
+            color: $text-white;
             font-size: 0.87rem;
         }
         &:last-child {
