@@ -11618,6 +11618,10 @@ textarea.form-control-lg {
   flex-wrap: wrap;
   font-size: 0.87rem;
   font-weight: 400;
+  align-items: baseline;
+}
+.footer .contact-us__links i {
+  font-size: 15px;
 }
 .footer .contact-us__links span {
   display: inline-block;
@@ -12398,6 +12402,10 @@ footer::before {
     width: 100%;
     padding: 1.5rem 2.12rem;
   }
+}
+.spinner-lists-item.active {
+  box-shadow: 0 2.19rem 3.37rem rgba(132, 30, 37, 0.23);
+  background-color: #F9F9F9;
 }
 .spinner-lists-item:hover, .spinner-lists-item:focus {
   box-shadow: 0 2.19rem 3.37rem rgba(132, 30, 37, 0.23);

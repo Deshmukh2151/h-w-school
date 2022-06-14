@@ -560,6 +560,10 @@
                 width: 100%;
                 padding: 1.5rem 2.12rem;
             }
+            &.active{
+                box-shadow: 0 2.19rem 3.37rem rgb(132 30 37 / 23%);
+                background-color: #F9F9F9;
+            }
             &:hover,
             &:focus {
                 box-shadow: 0 2.19rem 3.37rem rgb(132 30 37 / 23%);

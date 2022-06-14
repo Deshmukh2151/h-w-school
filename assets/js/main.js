@@ -5,6 +5,7 @@ $(document).ready(function(){
     $("#searchHere").click(function(){
         $(".search-div").toggleClass("d-block");
     });
+    // Carousel
     $('.our-school-carousel').owlCarousel({
         loop:true,
         margin:10,
@@ -40,6 +41,13 @@ $(document).ready(function(){
                 items:3,
             }
         }
+    });
+
+    $('.spinner-lists-item').on("click", function(){
+    
+        $('.spinner-lists-item').removeClass('active');
+        
+        $(this).addClass('active');
     });
 });
 

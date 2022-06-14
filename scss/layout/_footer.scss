@@ -242,6 +242,10 @@
         flex-wrap: wrap;
         font-size: 0.87rem;
         font-weight: 400;
+        align-items: baseline;
+        i{
+            font-size: 15px;
+        }
         span {
             display: inline-block;
         }
