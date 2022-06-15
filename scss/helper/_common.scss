@@ -64,12 +64,13 @@ a{
 
 .search-div{
     position: absolute;
-    right: 5%;
-    top: 15%;
+    right: 4%;
     display: none;
     z-index: 10000000;
     transition: all 05s ease-in-out;
     background: white;
-    padding: 20px;
+    padding: 18px;
     border-radius: 5px;
+    margin-left: 5px;
 }
+
